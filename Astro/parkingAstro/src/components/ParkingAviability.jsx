@@ -3,6 +3,34 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+// Componente personalizado para la flecha "siguiente"
+const CustomNextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} next-arrow`}
+      style={{ ...style }}
+      onClick={onClick}
+    >
+      →
+    </div>
+  );
+};
+
+// Componente personalizado para la flecha "anterior"
+const CustomPrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={`${className} prev-arrow`}
+      style={{ ...style }}
+      onClick={onClick}
+    >
+      ←
+    </div>
+  );
+};
+
 const ParkingAviability = ({ apiUrl, onSelectParking }) => {
   const [parkings, setParkings] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -64,10 +92,8 @@ const ParkingAviability = ({ apiUrl, onSelectParking }) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: true,
-    
-    //centerPadding: "10px", // Ajusta según el espacio que quieras
-    nextArrow: <div className="next-arrow">→</div>,
-    prevArrow: <div className="prev-arrow">←</div>,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -97,33 +123,33 @@ const ParkingAviability = ({ apiUrl, onSelectParking }) => {
               onClick={() => onSelectParking(parking.id)}
             >
               <div className="bg-gray-800 rounded-lg shadow-lg p-6 mx-4 hover:shadow-xl hover:shadow-violet-500 w-120 h-54">
-              <div className="relative z-10">
-                <h2 className="text-xl font-bold text-violet-400">{parking.name}</h2>
-                <p className="text-gray-400 mt-2">
-                  <strong>Ubicación:</strong> {parking.location}
-                </p>
-                <p className="text-gray-400 mt-1">
-                  <strong>Ocupación:</strong> {parking.tickets.length}/{parking.total_capacity} plazas
-                </p>
-                <div className="mt-4 flex items-center">
-                  <div
-                    className={`w-4 h-4 rounded-full ${
-                      parking.tickets.length < parking.total_capacity
-                        ? "bg-green-500"
-                        : "bg-red-500"
-                    }`}
-                  ></div>
-                  <span
-                    className={`ml-2 ${
-                      parking.tickets.length < parking.total_capacity
-                        ? "text-green-500"
-                        : "text-red-500"
-                    }`}
-                  >
-                    {parking.tickets.length < parking.total_capacity ? "Disponible" : "Completo"}
-                  </span>
+                <div className="relative z-10">
+                  <h2 className="text-xl font-bold text-violet-400">{parking.name}</h2>
+                  <p className="text-gray-400 mt-2">
+                    <strong>Ubicación:</strong> {parking.location}
+                  </p>
+                  <p className="text-gray-400 mt-1">
+                    <strong>Ocupación:</strong> {parking.tickets.length}/{parking.total_capacity} plazas
+                  </p>
+                  <div className="mt-4 flex items-center">
+                    <div
+                      className={`w-4 h-4 rounded-full ${
+                        parking.tickets.length < parking.total_capacity
+                          ? "bg-green-500"
+                          : "bg-red-500"
+                      }`}
+                    ></div>
+                    <span
+                      className={`ml-2 ${
+                        parking.tickets.length < parking.total_capacity
+                          ? "text-green-500"
+                          : "text-red-500"
+                      }`}
+                    >
+                      {parking.tickets.length < parking.total_capacity ? "Disponible" : "Completo"}
+                    </span>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
           ))}
