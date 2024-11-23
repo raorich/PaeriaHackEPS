@@ -1,6 +1,8 @@
 import datetime
 from flask import Flask, request, jsonify 
 from sqlalchemy import text
+from flask_cors import CORS
+
 from functions import (
     session_id_generator
 )
@@ -8,6 +10,7 @@ from models import db, Parking, Controller, Ticket, TypeRegister, DoorRegisters,
 
 # Configuración del servidor Flask
 app = Flask(__name__)
+CORS(app)
 port = 5000
 
 # Configuración de conexión a PostgreSQL
@@ -78,6 +81,7 @@ def get_tickets():
             tickets_list.append({
                 'id': ticket.id,
                 'ubication': ticket.ubication,
+                'parking_id': ticket.parking_id,
                 'active': ticket.active
             })
         
