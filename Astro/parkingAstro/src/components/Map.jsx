@@ -15,7 +15,6 @@ const Map = ({ apiUrl, selectedParkingId }) => {
             throw new Error("Error al obtener el parking");
           }
           const data = await response.json();
-          console.log(data)
           setParking(data.tickets || []);
         } catch (err) {
           console.error(err.message);
