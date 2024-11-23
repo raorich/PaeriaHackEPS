@@ -60,7 +60,7 @@ def get_session_id():
 def get_tickets():
     try:
         parking_id = request.args.get("parking_id",None)
-        active = request.args.get("active",False)
+        active = request.args.get("active",None)
         if parking_id is None:
             return jsonify({"success": False, "error": "None value recived"}), 400
 
@@ -68,7 +68,10 @@ def get_tickets():
         if not parking:
             return jsonify({"success": False, "error": "Parking ID do not exists"}), 400
         
-        filter_tickets = Ticket.query.filter_by(parking_id=parking_id, active=active)
+        if active is None:
+            filter_tickets = Ticket.query.filter_by(parking_id=parking_id)
+        else:
+            filter_tickets = Ticket.query.filter_by(parking_id=parking_id, active=active)
         
         tickets_list = []
         for ticket in filter_tickets:
