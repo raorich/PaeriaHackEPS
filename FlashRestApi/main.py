@@ -1,6 +1,6 @@
 import datetime
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, request, jsonify 
+from models import db, Parking
 
 # Configuración del servidor Flask
 app = Flask(__name__)
@@ -10,26 +10,38 @@ port = 5000
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://root:hackeps@172.16.143.120:5432/parking_hackeps'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# Inicializar SQLAlchemy
-db = SQLAlchemy(app)
-
-class Parking(db.Model):
-    __tablename__ = 'parkings'
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(255), nullable=False)
-    created_at = db.Column(db.DateTime, default=datetime.datetime.now)
+db.init_app(app)
 
 @app.route('/')
 def hello_world():
     return 'Api index'
 
-@app.route('/test-db')
+@app.route('/get-parkings')
 def test_db():
     try:
         parkings = Parking.query.all()
         return {"success": True, "data": [p.name for p in parkings]}
     except Exception as e:
         return {"success": False, "error": str(e)}
+    
+
+@app.route('/add-parking', methods=['POST'])
+def add_parking():
+    try:
+        data = request.get_json()
+        name = data.get('name')
+
+        if not name:
+            return jsonify({"success": False, "error": "El campo 'name' es obligatorio"}), 400
+
+        new_parking = Parking(name=name)
+        db.session.add(new_parking)
+        db.session.commit()
+
+        return jsonify({"success": True, "message": "Parking creado exitosamente", "parking": {"id": new_parking.id, "name": new_parking.name}})
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
+
 
 # Crear tablas automáticamente en modo desarrollo
 with app.app_context():
