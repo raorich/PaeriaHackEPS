@@ -106,17 +106,18 @@ def request_tiquet_info(server_address):
                 logs.info(f"Received correct session ID: {session_id_response}")
                 generate_ticket(place_id,place_ubication)
             else:
-                logs.warning("Server response did not contain a controller ID. Ignoring...")
+                logs.fail("Server response did not contain a controller ID. Ignoring...")
         else:
-            logs.warning(f"Received incorrect Parking ID {parking_id_response}. Ignoring...")    
+            logs.fail(f"Received incorrect Parking ID {parking_id_response}. Ignoring...")    
     else:
-        logs.warning(f"Received incorrect MAC {mac_response}. Ignoring...")
+        logs.fail(f"Received incorrect MAC {mac_response}. Ignoring...")
 
     # Return none as fail return
     return None
 
 def generate_ticket(id, ubication):
-    print(f"Printing ticket in spot {ubication} with identifier {id} at time {datetime.datetime.now().strftime("%B %d, %Y, %H:%M:%S")}")
+    time = datetime.datetime.now().strftime("%B %d, %Y, %H:%M:%S")
+    print(f"[ACTION] Printing ticket in spot {ubication} with identifier {id} at time {time}")
 
 def register_parking_exit(server_address, ticket_id):
     """
@@ -160,14 +161,14 @@ def register_parking_exit(server_address, ticket_id):
                 logs.info(f"Received correct session ID: {session_id_response}")
                 open_door()
             else:
-                logs.warning("Server response did not contain a controller ID. Ignoring...")
+                logs.fail("Server response did not contain a controller ID. Ignoring...")
         else:
-            logs.warning(f"Received incorrect Parking ID {parking_id_response}. Ignoring...")    
+            logs.fail(f"Received incorrect Parking ID {parking_id_response}. Ignoring...")    
     else:
-        logs.warning(f"Received incorrect MAC {mac_response}. Ignoring...")
+        logs.fail(f"Received incorrect MAC {mac_response}. Ignoring...")
 
     # Return none as fail return
     return None
 
 def open_door():
-    print("Opening Door")
+    print("[ACTION] Opening parking door...")
