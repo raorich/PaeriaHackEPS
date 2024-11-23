@@ -1,0 +1,50 @@
+---
+const apiUrl = import.meta.env.VITE_API_URL;
+
+if (!apiUrl) {
+  throw new Error("La URL de la API no está definida en el archivo .env");
+}
+
+// Definimos el tipo de parking según la estructura que nos has proporcionado
+interface Parking {
+  id: number;
+  name: string;
+  location: string;
+  total_capacity: number;
+  created_at: string;
+}
+
+let parkings: Parking[] = [];
+
+try {
+  const response = await fetch(apiUrl+"get-parkings");
+  if (!response.ok) {
+    throw new Error("Error al obtener los datos de los aparcamientos");
+  }
+  const jsonData = await response.json();
+  parkings = jsonData;
+  console.log(jsonData)
+} catch (error) {
+  console.error("Error al obtener los datos:", error);
+}
+---
+
+<div>
+  <h1 class="text-center text-2xl font-bold my-4">Aparcamientos Disponibles</h1>
+
+  {parkings.length > 0 ? (
+    <ul class="space-y-4">
+      {parkings.map((parking) => (
+        // Elimina el atributo key aquí
+        <li class="border p-4 rounded-md shadow-sm">
+          <h2 class="font-semibold">{parking.name}</h2>
+          <p><strong>Ubicación: </strong>{parking.location}</p>
+          <p><strong>Capacidad total: </strong>{parking.total_capacity}</p>
+          <p><strong>Fecha de creación: </strong>{new Date(parking.created_at).toLocaleDateString()}</p>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p>Cargando aparcamientos...</p>
+  )}
+</div>
