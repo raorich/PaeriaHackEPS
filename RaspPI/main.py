@@ -43,11 +43,13 @@ def main():
     logs.info("Starting the parking sensor program...")
     
     # Request session ID
-    session_id = api.request_controller_id(f"{config_data['server_address']}/get-session-id")
-    if session_id:
-        # Save session ID
-        config.config_json["session_id"] = session_id
-        config.save_config()
+    while True:
+        session_id = api.request_controller_id(f"{config_data['server_address']}/get-session-id")
+        if session_id:
+            # Save session ID
+            config.config_json["session_id"] = session_id
+            config.save_config()
+            break
     
     print("Starting parking monitorization...")
 
