@@ -23,14 +23,16 @@ def main():
     logs.info("Starting the parking sensor program...")
     
     # Request session ID
-    session_id = request_controller_id(f"{config_data["server_address"]}/get-session-id",config_data["parking_id"],config_data["MAC"],)
+    session_id = request_controller_id(f"{config_data["server_address"]}/get-session-id")
     if session_id:
         # Save session ID
         config.config_json["session_id"] = session_id
         config.save_config()
     
     print("Start parking monitorization")
-        
+    request_tiquet_info(f"{config_data["server_address"]}/add-door-register-entry")
+
+    #register_parking_exit(f"{config_data["server_address"]}/add-door-register-exit",11)
 
 if __name__ == "__main__":
     main()
