@@ -15,14 +15,16 @@ def generate_config():
     """
     global config_json
     config_json = {
-        "parking_id": 1,  # Default parking ID
-        "MAC": "00:14:22:01:23:45",
-        "session_id": "000000",  # Default controller ID
+        "parking_id": 1,                                 # Default parking ID
+        "MAC": "00:14:22:01:23:45",                      # 
+        "session_id": "000000",                          # Default controller ID
         "server_address": "http://172.16.143.120:5000",  # Default server address
-        "time_created": datetime.now().isoformat()  # Creation timestamp
+        "time_created": datetime.now().isoformat(),      # Creation timestamp
+        "beam_timeout": 3,                               # In seconds
+        "mode": "entry"                                  # Opeartion mode (just for simulation purposes)
     }
     
-    # Save configuration
+    # Save and write configuration
     save_config()
 
     logs.info(f"Configuration file '{CONFIG_FILE}' created with default values.")

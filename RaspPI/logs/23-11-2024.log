@@ -9,3 +9,482 @@
 [2024-11-23 16:10:29] INFO:   Session started at: 2024-11-23T16:10:24.342875
 [2024-11-23 16:10:29] INFO: Starting the parking sensor program...
 [2024-11-23 16:10:29] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:16:09] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:16:09] INFO: Current Configuration:
+[2024-11-23 16:16:09] INFO:   parking_id: 1
+[2024-11-23 16:16:09] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:16:09] INFO:   session_id: SESSION-1-CRCJUXRXBDNVTTCSVMT
+[2024-11-23 16:16:09] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:16:09] INFO:   time_created: 2024-11-23T16:10:29.444064
+[2024-11-23 16:16:09] INFO: Session Details:
+[2024-11-23 16:16:09] INFO:   Session started at: 2024-11-23T16:10:29.444064
+[2024-11-23 16:16:09] INFO: Starting the parking sensor program...
+[2024-11-23 16:16:39] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:16:39] INFO: Current Configuration:
+[2024-11-23 16:16:39] INFO:   parking_id: 1
+[2024-11-23 16:16:39] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:16:39] INFO:   session_id: SESSION-1-CRCJUXRXBDNVTTCSVMT
+[2024-11-23 16:16:39] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:16:39] INFO:   time_created: 2024-11-23T16:10:29.444064
+[2024-11-23 16:16:39] INFO: Session Details:
+[2024-11-23 16:16:39] INFO:   Session started at: 2024-11-23T16:10:29.444064
+[2024-11-23 16:16:39] INFO: Starting the parking sensor program...
+[2024-11-23 16:16:50] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:16:50] INFO: Current Configuration:
+[2024-11-23 16:16:50] INFO:   parking_id: 1
+[2024-11-23 16:16:50] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:16:50] INFO:   session_id: SESSION-1-CRCJUXRXBDNVTTCSVMT
+[2024-11-23 16:16:50] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:16:50] INFO:   time_created: 2024-11-23T16:10:29.444064
+[2024-11-23 16:16:50] INFO: Session Details:
+[2024-11-23 16:16:50] INFO:   Session started at: 2024-11-23T16:10:29.444064
+[2024-11-23 16:16:50] INFO: Starting the parking sensor program...
+[2024-11-23 16:16:50] ERROR: Failed to request controller ID: HTTPConnectionPool(host='172.16.143.120', port=5000): Max retries exceeded with url: /get-session-id (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7c96015488f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-11-23 16:16:59] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:16:59] INFO: Current Configuration:
+[2024-11-23 16:16:59] INFO:   parking_id: 1
+[2024-11-23 16:16:59] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:16:59] INFO:   session_id: SESSION-1-CRCJUXRXBDNVTTCSVMT
+[2024-11-23 16:16:59] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:16:59] INFO:   time_created: 2024-11-23T16:10:29.444064
+[2024-11-23 16:16:59] INFO: Session Details:
+[2024-11-23 16:16:59] INFO:   Session started at: 2024-11-23T16:10:29.444064
+[2024-11-23 16:16:59] INFO: Starting the parking sensor program...
+[2024-11-23 16:16:59] ERROR: Failed to request controller ID: HTTPConnectionPool(host='172.16.143.120', port=5000): Max retries exceeded with url: /get-session-id (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x77020f243c20>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-11-23 16:27:48] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:27:48] INFO: Current Configuration:
+[2024-11-23 16:27:48] INFO:   parking_id: 1
+[2024-11-23 16:27:48] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:27:48] INFO:   session_id: SESSION-1-CRCJUXRXBDNVTTCSVMT
+[2024-11-23 16:27:48] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:27:48] INFO:   time_created: 2024-11-23T16:10:29.444064
+[2024-11-23 16:27:48] INFO: Session Details:
+[2024-11-23 16:27:48] INFO:   Session started at: 2024-11-23T16:10:29.444064
+[2024-11-23 16:27:48] INFO: Starting the parking sensor program...
+[2024-11-23 16:27:48] INFO: Received correct session ID: SESSION-1-MOLECZRIZTAFOAGYLWQ
+[2024-11-23 16:27:48] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:28:30] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:28:30] INFO: Current Configuration:
+[2024-11-23 16:28:30] INFO:   parking_id: 1
+[2024-11-23 16:28:30] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:28:30] INFO:   session_id: SESSION-1-MOLECZRIZTAFOAGYLWQ
+[2024-11-23 16:28:30] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:28:30] INFO:   time_created: 2024-11-23T16:27:48.594550
+[2024-11-23 16:28:30] INFO: Session Details:
+[2024-11-23 16:28:30] INFO:   Session started at: 2024-11-23T16:27:48.594550
+[2024-11-23 16:28:30] INFO: Starting the parking sensor program...
+[2024-11-23 16:28:30] INFO: Received correct session ID: SESSION-1-DQERGHJXARRMLOQW
+[2024-11-23 16:28:30] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:28:42] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:28:42] INFO: Current Configuration:
+[2024-11-23 16:28:42] INFO:   parking_id: 1
+[2024-11-23 16:28:42] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:28:42] INFO:   session_id: SESSION-1-DQERGHJXARRMLOQW
+[2024-11-23 16:28:42] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:28:42] INFO:   time_created: 2024-11-23T16:28:30.945104
+[2024-11-23 16:28:42] INFO: Session Details:
+[2024-11-23 16:28:42] INFO:   Session started at: 2024-11-23T16:28:30.945104
+[2024-11-23 16:28:42] INFO: Starting the parking sensor program...
+[2024-11-23 16:28:42] INFO: Received correct session ID: SESSION-1-OMJWZIBGAAOC
+[2024-11-23 16:28:42] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:29:47] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:29:47] INFO: Current Configuration:
+[2024-11-23 16:29:47] INFO:   parking_id: 1
+[2024-11-23 16:29:47] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:29:47] INFO:   session_id: SESSION-1-OMJWZIBGAAOC
+[2024-11-23 16:29:47] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:29:47] INFO:   time_created: 2024-11-23T16:28:42.512843
+[2024-11-23 16:29:47] INFO: Session Details:
+[2024-11-23 16:29:47] INFO:   Session started at: 2024-11-23T16:28:42.512843
+[2024-11-23 16:29:47] INFO: Starting the parking sensor program...
+[2024-11-23 16:29:47] INFO: Received correct session ID: SESSION-1-GYDEBUTWVQAXCDBA
+[2024-11-23 16:29:47] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:29:54] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:29:54] INFO: Current Configuration:
+[2024-11-23 16:29:54] INFO:   parking_id: 1
+[2024-11-23 16:29:54] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:29:54] INFO:   session_id: SESSION-1-GYDEBUTWVQAXCDBA
+[2024-11-23 16:29:54] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:29:54] INFO:   time_created: 2024-11-23T16:29:47.380435
+[2024-11-23 16:29:54] INFO: Session Details:
+[2024-11-23 16:29:54] INFO:   Session started at: 2024-11-23T16:29:47.380435
+[2024-11-23 16:29:54] INFO: Starting the parking sensor program...
+[2024-11-23 16:29:54] INFO: Received correct session ID: SESSION-1-QKWJYPBWFTP
+[2024-11-23 16:29:54] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:30:19] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:30:19] INFO: Current Configuration:
+[2024-11-23 16:30:19] INFO:   parking_id: 1
+[2024-11-23 16:30:19] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:30:19] INFO:   session_id: SESSION-1-QKWJYPBWFTP
+[2024-11-23 16:30:19] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:30:19] INFO:   time_created: 2024-11-23T16:29:54.917560
+[2024-11-23 16:30:19] INFO: Session Details:
+[2024-11-23 16:30:19] INFO:   Session started at: 2024-11-23T16:29:54.917560
+[2024-11-23 16:30:19] INFO: Starting the parking sensor program...
+[2024-11-23 16:30:19] INFO: Received correct session ID: SESSION-1-BSIGNXMUMRIFWKMJFMT
+[2024-11-23 16:30:19] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:30:33] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:30:33] INFO: Current Configuration:
+[2024-11-23 16:30:33] INFO:   parking_id: 1
+[2024-11-23 16:30:33] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:30:33] INFO:   session_id: SESSION-1-BSIGNXMUMRIFWKMJFMT
+[2024-11-23 16:30:33] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:30:33] INFO:   time_created: 2024-11-23T16:30:19.232200
+[2024-11-23 16:30:33] INFO: Session Details:
+[2024-11-23 16:30:33] INFO:   Session started at: 2024-11-23T16:30:19.232200
+[2024-11-23 16:30:33] INFO: Starting the parking sensor program...
+[2024-11-23 16:30:33] INFO: Received correct session ID: SESSION-1-QBDRVILNZOAQPMXLL
+[2024-11-23 16:30:33] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:30:49] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:30:49] INFO: Current Configuration:
+[2024-11-23 16:30:49] INFO:   parking_id: 1
+[2024-11-23 16:30:49] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:30:49] INFO:   session_id: SESSION-1-QBDRVILNZOAQPMXLL
+[2024-11-23 16:30:49] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:30:49] INFO:   time_created: 2024-11-23T16:30:33.259440
+[2024-11-23 16:30:49] INFO: Session Details:
+[2024-11-23 16:30:49] INFO:   Session started at: 2024-11-23T16:30:33.259440
+[2024-11-23 16:30:49] INFO: Starting the parking sensor program...
+[2024-11-23 16:30:49] INFO: Received correct session ID: SESSION-1-WUDXGQHGOPBDRVYBCZWQ
+[2024-11-23 16:30:49] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:31:08] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:31:08] INFO: Current Configuration:
+[2024-11-23 16:31:08] INFO:   parking_id: 1
+[2024-11-23 16:31:08] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:31:08] INFO:   session_id: SESSION-1-WUDXGQHGOPBDRVYBCZWQ
+[2024-11-23 16:31:08] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:31:08] INFO:   time_created: 2024-11-23T16:30:49.918675
+[2024-11-23 16:31:08] INFO: Session Details:
+[2024-11-23 16:31:08] INFO:   Session started at: 2024-11-23T16:30:49.918675
+[2024-11-23 16:31:08] INFO: Starting the parking sensor program...
+[2024-11-23 16:31:08] INFO: Received correct session ID: SESSION-1-POIBYQBJWGER
+[2024-11-23 16:31:08] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:31:27] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:31:27] INFO: Current Configuration:
+[2024-11-23 16:31:27] INFO:   parking_id: 1
+[2024-11-23 16:31:27] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:31:27] INFO:   session_id: SESSION-1-POIBYQBJWGER
+[2024-11-23 16:31:27] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:31:27] INFO:   time_created: 2024-11-23T16:31:08.544667
+[2024-11-23 16:31:27] INFO: Session Details:
+[2024-11-23 16:31:27] INFO:   Session started at: 2024-11-23T16:31:08.544667
+[2024-11-23 16:31:27] INFO: Starting the parking sensor program...
+[2024-11-23 16:31:28] INFO: Received correct session ID: SESSION-1-ROIHMYFPZG
+[2024-11-23 16:31:28] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:32:02] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:32:02] INFO: Current Configuration:
+[2024-11-23 16:32:02] INFO:   parking_id: 1
+[2024-11-23 16:32:02] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:32:02] INFO:   session_id: SESSION-1-ROIHMYFPZG
+[2024-11-23 16:32:02] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:32:02] INFO:   time_created: 2024-11-23T16:31:28.056044
+[2024-11-23 16:32:02] INFO: Session Details:
+[2024-11-23 16:32:02] INFO:   Session started at: 2024-11-23T16:31:28.056044
+[2024-11-23 16:32:02] INFO: Starting the parking sensor program...
+[2024-11-23 16:32:03] INFO: Received correct session ID: SESSION-1-JJNFKPRQLJGODE
+[2024-11-23 16:32:03] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:32:12] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:32:12] INFO: Current Configuration:
+[2024-11-23 16:32:12] INFO:   parking_id: 1
+[2024-11-23 16:32:12] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:32:12] INFO:   session_id: SESSION-1-JJNFKPRQLJGODE
+[2024-11-23 16:32:12] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:32:12] INFO:   time_created: 2024-11-23T16:32:03.046256
+[2024-11-23 16:32:12] INFO: Session Details:
+[2024-11-23 16:32:12] INFO:   Session started at: 2024-11-23T16:32:03.046256
+[2024-11-23 16:32:12] INFO: Starting the parking sensor program...
+[2024-11-23 16:32:12] INFO: Received correct session ID: SESSION-1-FVWZPYEJDFEDCTSYUTA
+[2024-11-23 16:32:12] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:32:40] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:32:40] INFO: Current Configuration:
+[2024-11-23 16:32:40] INFO:   parking_id: 1
+[2024-11-23 16:32:40] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:32:40] INFO:   session_id: SESSION-1-FVWZPYEJDFEDCTSYUTA
+[2024-11-23 16:32:40] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:32:40] INFO:   time_created: 2024-11-23T16:32:12.781749
+[2024-11-23 16:32:40] INFO: Session Details:
+[2024-11-23 16:32:40] INFO:   Session started at: 2024-11-23T16:32:12.781749
+[2024-11-23 16:32:40] INFO: Starting the parking sensor program...
+[2024-11-23 16:32:40] INFO: Received correct session ID: SESSION-1-OSWVXULDMFIQM
+[2024-11-23 16:32:40] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:32:57] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:32:57] INFO: Current Configuration:
+[2024-11-23 16:32:57] INFO:   parking_id: 1
+[2024-11-23 16:32:57] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:32:57] INFO:   session_id: SESSION-1-OSWVXULDMFIQM
+[2024-11-23 16:32:57] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:32:57] INFO:   time_created: 2024-11-23T16:32:40.758374
+[2024-11-23 16:32:57] INFO: Session Details:
+[2024-11-23 16:32:57] INFO:   Session started at: 2024-11-23T16:32:40.758374
+[2024-11-23 16:32:57] INFO: Starting the parking sensor program...
+[2024-11-23 16:32:57] INFO: Received correct session ID: SESSION-1-ZPMLTEUIMTQF
+[2024-11-23 16:32:57] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:33:30] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:33:30] INFO: Current Configuration:
+[2024-11-23 16:33:30] INFO:   parking_id: 1
+[2024-11-23 16:33:30] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:33:30] INFO:   session_id: SESSION-1-ZPMLTEUIMTQF
+[2024-11-23 16:33:30] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:33:30] INFO:   time_created: 2024-11-23T16:32:57.639265
+[2024-11-23 16:33:30] INFO: Session Details:
+[2024-11-23 16:33:30] INFO:   Session started at: 2024-11-23T16:32:57.639265
+[2024-11-23 16:33:30] INFO: Starting the parking sensor program...
+[2024-11-23 16:33:30] INFO: Received correct session ID: SESSION-1-OKMNRWGWDKMG
+[2024-11-23 16:33:30] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:33:40] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:33:40] INFO: Current Configuration:
+[2024-11-23 16:33:40] INFO:   parking_id: 1
+[2024-11-23 16:33:40] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:33:40] INFO:   session_id: SESSION-1-OKMNRWGWDKMG
+[2024-11-23 16:33:40] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:33:40] INFO:   time_created: 2024-11-23T16:33:30.380044
+[2024-11-23 16:33:40] INFO: Session Details:
+[2024-11-23 16:33:40] INFO:   Session started at: 2024-11-23T16:33:30.380044
+[2024-11-23 16:33:40] INFO: Starting the parking sensor program...
+[2024-11-23 16:33:40] INFO: Received correct session ID: SESSION-1-EJAVIKYCUZWH
+[2024-11-23 16:33:40] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:34:10] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:34:10] INFO: Current Configuration:
+[2024-11-23 16:34:10] INFO:   parking_id: 1
+[2024-11-23 16:34:10] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:34:10] INFO:   session_id: SESSION-1-EJAVIKYCUZWH
+[2024-11-23 16:34:10] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:34:10] INFO:   time_created: 2024-11-23T16:33:40.740527
+[2024-11-23 16:34:10] INFO: Session Details:
+[2024-11-23 16:34:10] INFO:   Session started at: 2024-11-23T16:33:40.740527
+[2024-11-23 16:34:10] INFO: Starting the parking sensor program...
+[2024-11-23 16:34:10] INFO: Received correct session ID: SESSION-1-TDSZCLWRJCNNUBWMBCR
+[2024-11-23 16:34:10] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:42:52] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:42:52] INFO: Current Configuration:
+[2024-11-23 16:42:52] INFO:   parking_id: 1
+[2024-11-23 16:42:52] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:42:52] INFO:   session_id: SESSION-1-TDSZCLWRJCNNUBWMBCR
+[2024-11-23 16:42:52] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:42:52] INFO:   time_created: 2024-11-23T16:34:10.856723
+[2024-11-23 16:42:52] INFO: Session Details:
+[2024-11-23 16:42:52] INFO:   Session started at: 2024-11-23T16:34:10.856723
+[2024-11-23 16:42:52] INFO: Starting the parking sensor program...
+[2024-11-23 16:42:52] INFO: Received correct session ID: SESSION-1-JDIFDIIJGZCK
+[2024-11-23 16:42:52] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:43:07] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:43:07] INFO: Current Configuration:
+[2024-11-23 16:43:07] INFO:   parking_id: 1
+[2024-11-23 16:43:07] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:43:07] INFO:   session_id: SESSION-1-JDIFDIIJGZCK
+[2024-11-23 16:43:07] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:43:07] INFO:   time_created: 2024-11-23T16:42:52.669357
+[2024-11-23 16:43:07] INFO: Session Details:
+[2024-11-23 16:43:07] INFO:   Session started at: 2024-11-23T16:42:52.669357
+[2024-11-23 16:43:07] INFO: Starting the parking sensor program...
+[2024-11-23 16:43:07] INFO: Received correct session ID: SESSION-1-EMQCPEIQFJB
+[2024-11-23 16:43:07] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:44:51] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:44:51] INFO: Current Configuration:
+[2024-11-23 16:44:51] INFO:   parking_id: 1
+[2024-11-23 16:44:51] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:44:51] INFO:   session_id: SESSION-1-EMQCPEIQFJB
+[2024-11-23 16:44:51] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:44:51] INFO:   time_created: 2024-11-23T16:43:07.535439
+[2024-11-23 16:44:51] INFO: Session Details:
+[2024-11-23 16:44:51] INFO:   Session started at: 2024-11-23T16:43:07.535439
+[2024-11-23 16:44:51] INFO: Starting the parking sensor program...
+[2024-11-23 16:44:52] INFO: Received correct session ID: SESSION-1-BZQJHIPOGJBVZPBJWIRC
+[2024-11-23 16:44:52] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:45:04] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:45:04] INFO: Current Configuration:
+[2024-11-23 16:45:04] INFO:   parking_id: 1
+[2024-11-23 16:45:04] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:45:04] INFO:   session_id: SESSION-1-BZQJHIPOGJBVZPBJWIRC
+[2024-11-23 16:45:04] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:45:04] INFO:   time_created: 2024-11-23T16:44:52.210107
+[2024-11-23 16:45:04] INFO: Session Details:
+[2024-11-23 16:45:04] INFO:   Session started at: 2024-11-23T16:44:52.210107
+[2024-11-23 16:45:04] INFO: Starting the parking sensor program...
+[2024-11-23 16:45:04] INFO: Received correct session ID: SESSION-1-UKNUQOXWRCVPZZYQRXNO
+[2024-11-23 16:45:04] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:45:23] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:45:23] INFO: Current Configuration:
+[2024-11-23 16:45:23] INFO:   parking_id: 1
+[2024-11-23 16:45:23] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:45:23] INFO:   session_id: SESSION-1-UKNUQOXWRCVPZZYQRXNO
+[2024-11-23 16:45:23] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:45:23] INFO:   time_created: 2024-11-23T16:45:04.833695
+[2024-11-23 16:45:23] INFO: Session Details:
+[2024-11-23 16:45:23] INFO:   Session started at: 2024-11-23T16:45:04.833695
+[2024-11-23 16:45:23] INFO: Starting the parking sensor program...
+[2024-11-23 16:45:23] INFO: Received correct session ID: SESSION-1-XOHVLRCROARGUMDSXGW
+[2024-11-23 16:45:23] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:45:44] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:45:44] INFO: Current Configuration:
+[2024-11-23 16:45:44] INFO:   parking_id: 1
+[2024-11-23 16:45:44] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:45:44] INFO:   session_id: SESSION-1-XOHVLRCROARGUMDSXGW
+[2024-11-23 16:45:44] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:45:44] INFO:   time_created: 2024-11-23T16:45:23.764833
+[2024-11-23 16:45:44] INFO: Session Details:
+[2024-11-23 16:45:44] INFO:   Session started at: 2024-11-23T16:45:23.764833
+[2024-11-23 16:45:44] INFO: Starting the parking sensor program...
+[2024-11-23 16:45:44] INFO: Received correct session ID: SESSION-1-GQEBXBPUSJEZKSZ
+[2024-11-23 16:45:44] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:47:00] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:47:00] INFO: Current Configuration:
+[2024-11-23 16:47:00] INFO:   parking_id: 1
+[2024-11-23 16:47:00] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:47:00] INFO:   session_id: SESSION-1-GQEBXBPUSJEZKSZ
+[2024-11-23 16:47:00] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:47:00] INFO:   time_created: 2024-11-23T16:45:44.653576
+[2024-11-23 16:47:00] INFO: Session Details:
+[2024-11-23 16:47:00] INFO:   Session started at: 2024-11-23T16:45:44.653576
+[2024-11-23 16:47:00] INFO: Starting the parking sensor program...
+[2024-11-23 16:47:00] INFO: Received correct session ID: SESSION-1-RXJPMPKUPL
+[2024-11-23 16:47:00] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:48:35] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:48:35] INFO: Current Configuration:
+[2024-11-23 16:48:35] INFO:   parking_id: 1
+[2024-11-23 16:48:35] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:48:35] INFO:   session_id: SESSION-1-RXJPMPKUPL
+[2024-11-23 16:48:35] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:48:35] INFO:   time_created: 2024-11-23T16:47:00.691349
+[2024-11-23 16:48:35] INFO: Session Details:
+[2024-11-23 16:48:35] INFO:   Session started at: 2024-11-23T16:47:00.691349
+[2024-11-23 16:48:35] INFO: Starting the parking sensor program...
+[2024-11-23 16:48:35] INFO: Received correct session ID: SESSION-1-FDURSYHWATWAH
+[2024-11-23 16:48:35] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:48:35] WARNING: [DEBUG] Received incorrect MAC None. Ignoring...
+[2024-11-23 16:49:42] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:49:42] INFO: Current Configuration:
+[2024-11-23 16:49:42] INFO:   parking_id: 1
+[2024-11-23 16:49:42] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:49:42] INFO:   session_id: SESSION-1-FDURSYHWATWAH
+[2024-11-23 16:49:42] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:49:42] INFO:   time_created: 2024-11-23T16:48:35.395504
+[2024-11-23 16:49:42] INFO: Session Details:
+[2024-11-23 16:49:42] INFO:   Session started at: 2024-11-23T16:48:35.395504
+[2024-11-23 16:49:42] INFO: Starting the parking sensor program...
+[2024-11-23 16:49:42] INFO: Received correct session ID: SESSION-1-ZGLPOQWZNXAYDBOA
+[2024-11-23 16:49:42] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:49:42] WARNING: [DEBUG] Received incorrect MAC None. Ignoring...
+[2024-11-23 16:58:37] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 16:58:37] INFO: Current Configuration:
+[2024-11-23 16:58:37] INFO:   parking_id: 1
+[2024-11-23 16:58:37] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 16:58:37] INFO:   session_id: SESSION-1-ZGLPOQWZNXAYDBOA
+[2024-11-23 16:58:37] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 16:58:37] INFO:   time_created: 2024-11-23T16:49:42.559815
+[2024-11-23 16:58:37] INFO: Session Details:
+[2024-11-23 16:58:37] INFO:   Session started at: 2024-11-23T16:49:42.559815
+[2024-11-23 16:58:37] INFO: Starting the parking sensor program...
+[2024-11-23 16:58:37] INFO: Received correct session ID: SESSION-1-IVIZHCVPYWH
+[2024-11-23 16:58:37] INFO: Configuration saved to 'config.json'.
+[2024-11-23 16:58:38] INFO: Received correct session ID: SESSION-1-IVIZHCVPYWH
+[2024-11-23 17:03:52] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 17:03:52] INFO: Current Configuration:
+[2024-11-23 17:03:52] INFO:   parking_id: 1
+[2024-11-23 17:03:52] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 17:03:52] INFO:   session_id: SESSION-1-IVIZHCVPYWH
+[2024-11-23 17:03:52] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 17:03:52] INFO:   time_created: 2024-11-23T16:58:37.991788
+[2024-11-23 17:03:52] INFO: Session Details:
+[2024-11-23 17:03:52] INFO:   Session started at: 2024-11-23T16:58:37.991788
+[2024-11-23 17:03:52] INFO: Starting the parking sensor program...
+[2024-11-23 17:03:52] INFO: Received correct session ID: SESSION-1-IMFEOHWGYHRQWWZBOADK
+[2024-11-23 17:03:52] INFO: Configuration saved to 'config.json'.
+[2024-11-23 17:03:52] INFO: Received correct session ID: SESSION-1-IMFEOHWGYHRQWWZBOADK
+[2024-11-23 17:06:00] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 17:06:00] INFO: Current Configuration:
+[2024-11-23 17:06:00] INFO:   parking_id: 1
+[2024-11-23 17:06:00] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 17:06:00] INFO:   session_id: SESSION-1-IMFEOHWGYHRQWWZBOADK
+[2024-11-23 17:06:00] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 17:06:00] INFO:   time_created: 2024-11-23T17:03:52.586713
+[2024-11-23 17:06:00] INFO: Session Details:
+[2024-11-23 17:06:00] INFO:   Session started at: 2024-11-23T17:03:52.586713
+[2024-11-23 17:06:00] INFO: Starting the parking sensor program...
+[2024-11-23 17:06:00] INFO: Received correct session ID: SESSION-1-LABRXPGENRRPAGZRS
+[2024-11-23 17:06:00] INFO: Configuration saved to 'config.json'.
+[2024-11-23 17:08:16] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 17:08:16] INFO: Current Configuration:
+[2024-11-23 17:08:16] INFO:   parking_id: 1
+[2024-11-23 17:08:16] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 17:08:16] INFO:   session_id: SESSION-1-LABRXPGENRRPAGZRS
+[2024-11-23 17:08:16] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 17:08:16] INFO:   time_created: 2024-11-23T17:06:00.215581
+[2024-11-23 17:08:16] INFO: Session Details:
+[2024-11-23 17:08:16] INFO:   Session started at: 2024-11-23T17:06:00.215581
+[2024-11-23 17:08:16] INFO: Starting the parking sensor program...
+[2024-11-23 17:08:16] INFO: Received correct session ID: SESSION-1-EQRQOEWBLHDKDGP
+[2024-11-23 17:08:16] INFO: Configuration saved to 'config.json'.
+[2024-11-23 17:09:36] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 17:09:36] INFO: Current Configuration:
+[2024-11-23 17:09:36] INFO:   parking_id: 1
+[2024-11-23 17:09:36] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 17:09:36] INFO:   session_id: SESSION-1-EQRQOEWBLHDKDGP
+[2024-11-23 17:09:36] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 17:09:36] INFO:   time_created: 2024-11-23T17:08:16.283504
+[2024-11-23 17:09:36] INFO: Session Details:
+[2024-11-23 17:09:36] INFO:   Session started at: 2024-11-23T17:08:16.283504
+[2024-11-23 17:09:36] INFO: Starting the parking sensor program...
+[2024-11-23 17:09:37] INFO: Received correct session ID: SESSION-1-DNGEUJKXORDK
+[2024-11-23 17:09:37] INFO: Configuration saved to 'config.json'.
+[2024-11-23 17:10:20] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 17:10:20] INFO: Current Configuration:
+[2024-11-23 17:10:20] INFO:   parking_id: 1
+[2024-11-23 17:10:20] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 17:10:20] INFO:   session_id: SESSION-1-DNGEUJKXORDK
+[2024-11-23 17:10:20] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 17:10:20] INFO:   time_created: 2024-11-23T17:09:37.077946
+[2024-11-23 17:10:20] INFO: Session Details:
+[2024-11-23 17:10:20] INFO:   Session started at: 2024-11-23T17:09:37.077946
+[2024-11-23 17:10:20] INFO: Starting the parking sensor program...
+[2024-11-23 17:10:20] INFO: Received correct session ID: SESSION-1-AZZEIRMWWLJFY
+[2024-11-23 17:10:20] INFO: Configuration saved to 'config.json'.
+[2024-11-23 17:11:03] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 17:11:03] INFO: Current Configuration:
+[2024-11-23 17:11:03] INFO:   parking_id: 1
+[2024-11-23 17:11:03] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 17:11:03] INFO:   session_id: SESSION-1-AZZEIRMWWLJFY
+[2024-11-23 17:11:03] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 17:11:03] INFO:   time_created: 2024-11-23T17:10:20.716719
+[2024-11-23 17:11:03] INFO: Session Details:
+[2024-11-23 17:11:03] INFO:   Session started at: 2024-11-23T17:10:20.716719
+[2024-11-23 17:11:03] INFO: Starting the parking sensor program...
+[2024-11-23 17:11:04] INFO: Received correct session ID: SESSION-1-WFHCYFVXFYWID
+[2024-11-23 17:11:04] INFO: Configuration saved to 'config.json'.
+[2024-11-23 17:11:47] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 17:11:47] INFO: Current Configuration:
+[2024-11-23 17:11:47] INFO:   parking_id: 1
+[2024-11-23 17:11:47] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 17:11:47] INFO:   session_id: SESSION-1-WFHCYFVXFYWID
+[2024-11-23 17:11:47] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 17:11:47] INFO:   time_created: 2024-11-23T17:11:04.015464
+[2024-11-23 17:11:47] INFO: Session Details:
+[2024-11-23 17:11:47] INFO:   Session started at: 2024-11-23T17:11:04.015464
+[2024-11-23 17:11:47] INFO: Starting the parking sensor program...
+[2024-11-23 17:11:47] INFO: Received correct session ID: SESSION-1-BKTUSXPKLZC
+[2024-11-23 17:11:47] INFO: Configuration saved to 'config.json'.
+[2024-11-23 17:12:02] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 17:12:02] INFO: Current Configuration:
+[2024-11-23 17:12:02] INFO:   parking_id: 1
+[2024-11-23 17:12:02] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 17:12:02] INFO:   session_id: SESSION-1-BKTUSXPKLZC
+[2024-11-23 17:12:02] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 17:12:02] INFO:   time_created: 2024-11-23T17:11:47.273258
+[2024-11-23 17:12:02] INFO: Session Details:
+[2024-11-23 17:12:02] INFO:   Session started at: 2024-11-23T17:11:47.273258
+[2024-11-23 17:12:02] INFO: Starting the parking sensor program...
+[2024-11-23 17:12:02] INFO: Received correct session ID: SESSION-1-SRRUCYHMEAVDSYFRRX
+[2024-11-23 17:12:02] INFO: Configuration saved to 'config.json'.
+[2024-11-23 17:12:02] INFO: Received correct session ID: SESSION-1-SRRUCYHMEAVDSYFRRX
+[2024-11-23 18:19:10] INFO: Configuration file 'config.json' loaded.
+[2024-11-23 18:19:10] INFO: Current Configuration:
+[2024-11-23 18:19:10] INFO:   parking_id: 1
+[2024-11-23 18:19:10] INFO:   MAC: 00:14:22:01:23:45
+[2024-11-23 18:19:10] INFO:   session_id: SESSION-1-SRRUCYHMEAVDSYFRRX
+[2024-11-23 18:19:10] INFO:   server_address: http://172.16.143.120:5000
+[2024-11-23 18:19:10] INFO:   time_created: 2024-11-23T17:12:02.749986
+[2024-11-23 18:19:10] INFO: Session Details:
+[2024-11-23 18:19:10] INFO:   Session started at: 2024-11-23T17:12:02.749986
+[2024-11-23 18:19:10] INFO: Starting the parking sensor program...
+[2024-11-23 18:19:10] INFO: Received correct session ID: SESSION-1-IRVMZQUSFOV
+[2024-11-23 18:19:10] INFO: Configuration saved to 'config.json'.
