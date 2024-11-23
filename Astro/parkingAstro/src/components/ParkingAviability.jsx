@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const ApiData = ({ apiUrl }) => {
+const ParkingAviability = ({ apiUrl, onSelectParking }) => {
   const [parkings, setParkings] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -68,6 +68,7 @@ const ApiData = ({ apiUrl }) => {
           <div
             key={parking.id}
             className="relative bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl hover:shadow-violet-500"
+            onClick={() => onSelectParking(parking.id)}
           >
             <div className="relative z-10">
               <h2 className="text-xl font-bold text-violet-400">{parking.name}</h2>
@@ -99,4 +100,4 @@ const ApiData = ({ apiUrl }) => {
   );
 };
 
-export default ApiData;
+export default ParkingAviability;

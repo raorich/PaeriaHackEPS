@@ -1,14 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ApiData from '../components/ParkingAviability.jsx';
+import ParkingManager from '../components/ParkingManager.jsx'
 
 const apiUrl = import.meta.env.VITE_API_URL;
-
 ---
 
-<Layout title="Parking Manager">
+<Layout title="ParkingManager">
   <main>
-    <!-- Client Process Data -->
-    <ApiData client:load apiUrl={apiUrl}/>
+    <ParkingManager client:load apiUrl={apiUrl} />
+    <!-- Client Process Data 
+    <ParkingAviability client:load apiUrl={apiUrl}/>
+    <Predictions client:load apiUrl={apiUrl}/>-->
   </main>
 </Layout>
