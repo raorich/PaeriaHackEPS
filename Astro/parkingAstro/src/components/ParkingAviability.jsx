@@ -51,13 +51,13 @@ const ParkingAviability = ({ apiUrl, onSelectParking }) => {
 
       console.log(parkings)
 
-      const responseTickets = await fetch(`${apiUrl}/get-tickets?parking_id=1&active=True`);
+      const responseTickets = await fetch(`${apiUrl}/get-tickets?active=True`);
       if (!responseTickets.ok) {
         throw new Error("Error al obtener los datos de los tickets");
       }
       const jsonDataTickets = await responseTickets.json();
       const tickets = jsonDataTickets.data || [];
-
+      console.log(tickets)
       const combinedParkings = parkings.map((parking) => {
         const ticketsForParking = tickets.filter(
           (ticket) => ticket.parking_id === parking.id

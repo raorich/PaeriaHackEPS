@@ -86,6 +86,7 @@ def assign_parking_spot():
 
         # Step 4: Check for available tickets (active = False)
         valid_ticket = main.Ticket.query.filter_by(parking_id=parking_id, active=False).first()
+        print(valid_ticket)
         if not valid_ticket:
             return main.jsonify({"success": False, "error": "No available space, your car cannot enter"}), 200
 

@@ -26,6 +26,9 @@
     "tailwindcss": "^3.4.15",
     "typescript": "^5.7.2"
   },
+  "preferences": {
+    "devToolbar": false
+  },
   "devDependencies": {
     "@types/pg": "^8.11.10"
   }
