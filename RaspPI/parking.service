@@ -1,0 +1,12 @@
+[Unit]
+Description=Parking Controller
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/rpi/Desktop/parking/RasPI
+ExecStart=/usr/bin/python3 /home/rpi/Desktop/parking/RasPI/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
