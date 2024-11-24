@@ -23,7 +23,7 @@ def _write_log(tag, message):
             log_file.write(log_entry)
         delete_old_logs()
     except Exception as e:
-        error(f"Failed to write log: {e}")
+        print(f"Failed to write log: {e}")
 
 def debug(message):
     """Log a debug message."""
