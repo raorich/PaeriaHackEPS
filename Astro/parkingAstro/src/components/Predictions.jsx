@@ -146,7 +146,16 @@ const Predictions = ({ apiUrl, selectedParkingId }) => {
         <h2 className="text-white text-center text-2xl font-bold my-4">
             Predicción de Plazas Disponibles
         </h2>
-        <div className="chart-container border-2 border-gray-700 rounded-lg p-4" style={{ width: "100%", height: "100%", minWidth: "400px", minHeight: "500px"}}>
+        <div 
+            className="chart-container border-2 border-gray-700 rounded-lg p-4" 
+            style={{ 
+                width: "100%", 
+                height: "auto", 
+                minWidth: "200px", 
+                minHeight: "400px",
+                maxWidth: "100%"
+            }}
+        >
             <Line data={chartData} options={chartOptions} />
         </div>
         </section>
