@@ -4,6 +4,7 @@ import config # Import the config module
 import logs
 import beam
 import signal
+import time
 
 def handle_sigusr1(sig, frame):
     """
@@ -50,6 +51,7 @@ def main():
             config.config_json["session_id"] = session_id
             config.save_config()
             break
+        time.sleep(5)
     
     print("Starting parking monitorization...")
 
