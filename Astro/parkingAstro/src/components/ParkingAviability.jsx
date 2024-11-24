@@ -43,7 +43,13 @@ const ParkingAviability = ({ apiUrl, onSelectParking }) => {
         throw new Error("Error al obtener los datos de los aparcamientos");
       }
       const jsonDataParkings = await responseParkings.json();
-      const parkings = jsonDataParkings.data || [];
+      const parkings = jsonDataParkings.data.sort((a, b) => {
+        const numA = parseInt(a.name.replace('PK', ''), 10);
+        const numB = parseInt(b.name.replace('PK', ''), 10);
+        return numA - numB;
+      }) || [];
+
+      console.log(parkings)
 
       const responseTickets = await fetch(apiUrl + "/get-tickets?parking_id=1&active=True");
       if (!responseTickets.ok) {

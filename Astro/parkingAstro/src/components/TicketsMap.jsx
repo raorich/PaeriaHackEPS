@@ -146,7 +146,10 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
           </style>
         </head>
         <body>
-          <div id="content" style="display: flex; justify-content: center; align-items: center;">
+          <div
+            id="content"
+            style="display: flex; justify-content: center; align-items: center; height: 100vh;"
+          >
             ${renderIframeContent()}
           </div>
         </body>
