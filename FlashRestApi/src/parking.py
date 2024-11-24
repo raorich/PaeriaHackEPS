@@ -24,6 +24,8 @@ def get_parkings():
                 'id': parking.id,               # Unique parking ID
                 'name': parking.name,           # Name of the parking
                 'location': parking.location,   # Location of the parking
+                'latitude': parking.latitude,   # Latitude of the parking
+                'longitude': parking.longitude,   # Longitude of the parking
                 'total_capacity': parking.total_capacity,  # Total capacity of the parking lot
                 'created_at': parking.created_at   # Creation date of the parking entry
             })
@@ -79,6 +81,8 @@ def get_parking():
                 "id": parking.id,
                 "name": parking.name,
                 "location": parking.location,
+                'latitude': parking.latitude,   # Latitude of the parking
+                'longitude': parking.longitude,   # Longitude of the parking
                 "total_capacity": parking.total_capacity,
                 "created_at": parking.created_at
             }

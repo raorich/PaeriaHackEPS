@@ -8,7 +8,7 @@ console.log(apiUrl)
 
 <Layout title="ParkingManager">
   <main>
-    <ParkingManager client:load apiUrl={apiUrl} />
+    <ParkingManager client:only="react" apiUrl={apiUrl} />
     <!-- Client Process Data 
     <ParkingAviability client:load apiUrl={apiUrl}/>
     <Predictions client:load apiUrl={apiUrl}/>-->

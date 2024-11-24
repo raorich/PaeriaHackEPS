@@ -99,16 +99,24 @@ const ParkingAviability = ({ apiUrl, onSelectParking }) => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
+          arrows: false,
         },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          centerPadding: "20px", // Espaciado reducido para pantallas pequeñas
+          centerPadding: "20px",
+          arrows: false,
         },
       },
     ],
+    beforeChange: () => {
+      // Eliminar el foco antes de cambiar de diapositiva
+      if (document.activeElement) {
+        document.activeElement.blur();
+      }
+    },
   };
 
   return (
