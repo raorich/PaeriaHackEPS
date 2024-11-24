@@ -14,8 +14,8 @@ const Map = ({ apiUrl, selectedParkingId }) => {
           if (!response.ok) {
             throw new Error("Error al obtener el parking");
           }
-          const data = await response.json();
-          setParking(data.tickets || []);
+          const jsonResponse = await response.json();
+          setParking(jsonResponse.data || []);
         } catch (err) {
           console.error(err.message);
         }
@@ -27,7 +27,7 @@ const Map = ({ apiUrl, selectedParkingId }) => {
     if (!selectedParkingId) {
       return (
         <section id="map" className="mt-12 text-center text-gray-400">
-          <h2 className="text-white text-center text-2xl font-bold my-4">
+          <h2 className="text-white text-center text-2xl font-bold mt-4 mb-7">
               Mapa
           </h2>
           <p className="text-gray-500">
@@ -39,7 +39,7 @@ const Map = ({ apiUrl, selectedParkingId }) => {
   
     return (
         <section id="map" className="mt-12 text-center text-gray-400">
-        <h2 className="text-white text-center text-2xl font-bold my-4">
+        <h2 className="text-white text-center text-2xl font-bold mt-4 mb-7">
             Mapa
         </h2>
         <p className="text-gray-400">

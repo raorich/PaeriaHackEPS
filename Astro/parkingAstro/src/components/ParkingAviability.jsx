@@ -113,16 +113,16 @@ const ParkingAviability = ({ apiUrl, onSelectParking }) => {
 
   return (
     <div>
-      <h1 className="text-center text-2xl font-bold my-4">Aparcamientos Disponibles</h1>
+      <h1 className="text-center text-2xl font-bold mt-4 mb-7">Aparcamientos Disponibles</h1>
       <section id="parkings">
-        <Slider {...sliderSettings}>
+        <Slider className="border-2 border-gray-700 rounded-lg" {...sliderSettings}>
           {parkings.map((parking) => (
             <div
               key={parking.id}
               className="relative"
               onClick={() => onSelectParking(parking.id)}
             >
-              <div className="bg-gray-800 rounded-lg shadow-lg p-6 mx-4 hover:shadow-xl hover:shadow-violet-500 w-120 h-54">
+              <div className="bg-gray-800 rounded-lg shadow-lg p-6 mx-4 m-6 hover:shadow-xl hover:shadow-violet-500 w-120 h-54 card-parking">
                 <div className="relative z-10">
                   <h2 className="text-xl font-bold text-violet-400">{parking.name}</h2>
                   <p className="text-gray-400 mt-2">

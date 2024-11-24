@@ -17,8 +17,12 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
           throw new Error("Error al obtener los tickets");
         }
         const jsonResponse = await response.json();
-        console.log(jsonResponse);
-        setTickets(jsonResponse.data || []);
+        const sortedData = jsonResponse.data.sort((a, b) => {
+          const numA = parseInt(a.ubication.replace('P', ''), 10);
+          const numB = parseInt(b.ubication.replace('P', ''), 10);
+          return numA - numB;
+        });
+        setTickets(sortedData || []);
       } catch (err) {
         console.error(err.message);
         setTickets([]);
@@ -33,7 +37,7 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
   if (!selectedParkingId) {
     return (
       <section id="ubication_tickets" className="mt-12 text-center text-gray-400">
-        <h2 className="text-white text-center text-2xl font-bold my-4">
+        <h2 className="text-white text-center text-2xl font-bold mt-4 mb-7">
           Ubicaciones Disponibles
         </h2>
         <p className="text-gray-500">
@@ -46,7 +50,7 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
   if (loading) {
     return (
       <section id="ubication_tickets" className="mt-12 text-center text-gray-400">
-        <h2 className="text-white text-center text-2xl font-bold my-4">
+        <h2 className="text-white text-center text-2xl font-bold mt-4 mb-7">
           Ubicaciones Disponibles
         </h2>
         <p className="text-gray-500">Cargando...</p>
@@ -57,7 +61,7 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
   if (tickets.length === 0) {
     return (
       <section id="ubication_tickets" className="mt-12 text-center text-gray-400">
-        <h2 className="text-white text-center text-2xl font-bold my-4">
+        <h2 className="text-white text-center text-2xl font-bold mt-4 mb-7">
           Ubicaciones Disponibles
         </h2>
         <p className="text-gray-500">
@@ -96,7 +100,6 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
         align-items: center; 
         gap: 10px; 
         padding: 20px;
-        background-color: #1a1a1a;
         color: white;
       ">
         ${grid}
@@ -105,7 +108,7 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
 
   return (
     <section id="ubication_tickets" className="mt-12 text-center">
-      <h2 className="text-white text-center text-2xl font-bold my-4">Ubicaciones Disponibles</h2>
+      <h2 className="text-white text-center text-2xl font-bold mt-4 mb-7 ">Ubicaciones Disponibles</h2>
       <iframe
         title="Ubicaciones Disponibles"
         srcDoc={`<!DOCTYPE html>
