@@ -25,7 +25,21 @@ db.init_app(app)
 
 @app.route('/')
 def index():
-    return 'Welcome to HackEps Paeria'
+    return '''
+    <h1>Welcome to HackEps Paeria</h1>
+    <p>This is the API documentation for the HackEps Paeria parking system.</p>
+    <h2>Available Endpoints</h2>
+    <ul>
+        <li><strong>GET /get-tickets</strong> - Retrieve all parking tickets.</li>
+        <li><strong>GET /get-parkings</strong> - Retrieve a list of all parkings.</li>
+        <li><strong>GET /get-parking</strong> - Retrieve details about a specific parking.</li>
+        <li><strong>POST /get-session-id</strong> - Generate a session ID.</li>
+        <li><strong>POST /add-door-register-entry</strong> - Register a vehicle entry.</li>
+        <li><strong>POST /add-door-register-exit</strong> - Register a vehicle exit.</li>
+        <li><strong>POST /request-occupation-prediction</strong> - Request a prediction for parking occupation.</li>
+    </ul>
+    <p>Each endpoint serves a specific purpose and interacts with the parking management system.</p>
+    '''
 
 @app.route('/get-session-id', methods=['POST'])
 def handle_get_session():
