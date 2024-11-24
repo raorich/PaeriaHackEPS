@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 const TicketsMap = ({ apiUrl, selectedParkingId }) => {
   const [tickets, setTickets] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false); //Handle if it's loading
 
   useEffect(() => {
     if (!selectedParkingId) {
@@ -10,13 +10,14 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
     }
 
     const fetchTickets = async () => {
-      setLoading(true);
+      setLoading(true); // Start Loading
       try {
-        const response = await fetch(apiUrl + `/get-tickets?parking_id=${selectedParkingId}`);
+        const response = await fetch(`${apiUrl}/get-tickets?parking_id=${selectedParkingId}`);
         if (!response.ok) {
           throw new Error("Error al obtener los tickets");
         }
         const jsonResponse = await response.json();
+        //Sort by number
         const sortedData = jsonResponse.data.sort((a, b) => {
           const numA = parseInt(a.ubication.replace('P', ''), 10);
           const numB = parseInt(b.ubication.replace('P', ''), 10);
@@ -34,6 +35,7 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
     fetchTickets();
   }, [apiUrl, selectedParkingId]);
 
+  //No parking ID return
   if (!selectedParkingId) {
     return (
       <section id="ubication_tickets" className="mt-12 text-center text-gray-400">
@@ -47,6 +49,7 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
     );
   }
 
+  //Loading return 
   if (loading) {
     return (
       <section id="ubication_tickets" className="mt-12 text-center text-gray-400">
@@ -58,6 +61,7 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
     );
   }
 
+  //Empty Predictions return
   if (tickets.length === 0) {
     return (
       <section id="ubication_tickets" className="mt-12 text-center text-gray-400">
@@ -71,6 +75,7 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
     );
   }
 
+  // Prepare data content for Iframe to render
   const renderIframeContent = () => {
     const grid = tickets
       .map(
@@ -106,6 +111,7 @@ const TicketsMap = ({ apiUrl, selectedParkingId }) => {
       </div>`;
   };
 
+  // return Iframe with the renderIframeContent elements
   return (
     <section id="ubication_tickets" className="mt-12 text-center">
       <h2 className="text-white text-center text-2xl font-bold mt-4 mb-7 ">Ubicaciones Disponibles</h2>

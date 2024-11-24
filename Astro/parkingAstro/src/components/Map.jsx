@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
-import L from "leaflet"; // Importa la biblioteca Leaflet
-import "leaflet/dist/leaflet.css"; // Importa los estilos de Leaflet
-import "leaflet-routing-machine"; // Importa la biblioteca para el enrutamiento
+import L from "leaflet"; // map library
+import "leaflet/dist/leaflet.css";
+import "leaflet-routing-machine"; // route calculator
 
 const Map = ({ apiUrl, selectedParkingId }) => {
   const [parking, setParking] = useState([]);
-  const [userLocation, setUserLocation] = useState(null);
+  const [userLocation, setUserLocation] = useState(null); //get UserLocation
 
-  const FLAG_TEST_ROUTE = false
+  const FLAG_TEST_ROUTE = false //Enable to TEST the enroute
 
   useEffect(() => {
-    // Solicitar la ubicación actual del usuario directamente
+    // Ask permission to the user
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -21,11 +21,10 @@ const Map = ({ apiUrl, selectedParkingId }) => {
         },
         (error) => {
           console.log("Not able to get ubication")
-          //console.error("Error al obtener la ubicación: ", error);
           if (FLAG_TEST_ROUTE) {
-            // Coordenadas de prueba para entornos no HTTPS o errores en la geolocalización
+            // Test location for non HTTPS websites or others errors with geolocalization
             setUserLocation({
-              latitude: 40.416775, // Madrid, España
+              latitude: 40.416775, // Madrid, Spain
               longitude: -3.703790,
             });
           }
@@ -36,6 +35,7 @@ const Map = ({ apiUrl, selectedParkingId }) => {
     }
   }, []);
 
+  // API Request Data Parking
   useEffect(() => {
     if (!selectedParkingId) {
       return;
@@ -57,22 +57,23 @@ const Map = ({ apiUrl, selectedParkingId }) => {
     fetchParking();
   }, [apiUrl, selectedParkingId]);
 
+  // API Request MAP
   useEffect(() => {
     if (parking && parking.latitude && parking.longitude) {
-      // Inicializar el mapa
+      // Initialize Map
       const map = L.map("map-container").setView([parking.latitude, parking.longitude], 15);
-  
+      
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
       }).addTo(map);
   
-      // Mostrar un marcador en el parking seleccionado
+      // Show pointer from the parking selected
       L.marker([parking.latitude, parking.longitude])
         .addTo(map)
         .bindPopup(`<b>${parking.name}</b><br>Latitud: ${parseFloat(parking.latitude).toFixed(6)}<br>Longitud: ${parseFloat(parking.longitude).toFixed(6)}`)
         .openPopup();
   
-      // Dibujar una ruta si se tiene la ubicación del usuario
+      // Draw Route if the user has location
       if (userLocation) {
         const routingControl = L.Routing.control({
           waypoints: [
@@ -80,12 +81,12 @@ const Map = ({ apiUrl, selectedParkingId }) => {
             L.latLng(parking.latitude, parking.longitude),
           ],
           routeWhileDragging: true,
-          show: false, // Oculta el cuadro de direcciones
-          createMarker: () => null, // Evita que los waypoints se muestren como marcadores
-          addWaypoints: false, // Desactiva la posibilidad de añadir waypoints
+          show: false, // Hide all path directions
+          createMarker: () => null, // Avoid waypoints being shown as Pointers
+          addWaypoints: false, // Unable posibility to add Pointers
         });
   
-        // Eliminar el contenedor del panel de direcciones
+        // Remove Routes
         routingControl.on("routeselected", () => {
           const container = document.querySelector(".leaflet-routing-container");
           if (container) container.style.display = "none";
@@ -95,11 +96,12 @@ const Map = ({ apiUrl, selectedParkingId }) => {
       }
   
       return () => {
-        map.remove(); // Limpiar el mapa al desmontar
+        map.remove();
       };
     }
   }, [parking, userLocation]);
 
+  //No parking ID return
   if (!parking || !parking.latitude || !parking.longitude) {
     return (
       <section id="map" className="mt-12 text-center text-gray-400">
@@ -112,7 +114,7 @@ const Map = ({ apiUrl, selectedParkingId }) => {
       </section>
     );
   }
-
+  //Render map return
   return (
     <section id="map" className="mt-12">
       <h2 className="text-white text-center text-2xl font-bold mt-4 mb-7">

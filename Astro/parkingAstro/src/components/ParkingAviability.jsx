@@ -51,7 +51,7 @@ const ParkingAviability = ({ apiUrl, onSelectParking }) => {
 
       console.log(parkings)
 
-      const responseTickets = await fetch(apiUrl + "/get-tickets?parking_id=1&active=True");
+      const responseTickets = await fetch(`${apiUrl}/get-tickets?parking_id=1&active=True`);
       if (!responseTickets.ok) {
         throw new Error("Error al obtener los datos de los tickets");
       }

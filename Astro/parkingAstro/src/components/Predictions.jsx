@@ -17,7 +17,7 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 
 const Predictions = ({ apiUrl, selectedParkingId }) => {
     const [predictions, setPredictions] = useState([]);
-    const [isLoading, setIsLoading] = useState(false); // Estado para controlar si está cargando
+    const [isLoading, setIsLoading] = useState(false); // Handle if is loading
 
     useEffect(() => {
       if (!selectedParkingId) {
@@ -25,7 +25,7 @@ const Predictions = ({ apiUrl, selectedParkingId }) => {
       }
     
       const fetchPredictions = async () => {
-        setIsLoading(true); // Empieza a cargar
+        setIsLoading(true); // Start Loading 
         try {
           const response = await fetch(`${apiUrl}/request-occupation-prediction`, {
             method: "POST", // Use POST request
@@ -43,15 +43,16 @@ const Predictions = ({ apiUrl, selectedParkingId }) => {
           setPredictions(predictions_json || []);
         } catch (err) {
             console.error(err.message);
-            setPredictions([]); // Resetea predicciones en caso de error
+            setPredictions([]); // Reset prediccions in case of error
         } finally {
-            setIsLoading(false); // Deja de cargar
+            setIsLoading(false); // Stop loading
         }
       };
   
       fetchPredictions();
     }, [apiUrl, selectedParkingId]);
-  
+    
+    //No parking ID return
     if (!selectedParkingId) {
       return (
         <section id="prediction" className="mt-12 text-center text-gray-400">
@@ -64,7 +65,7 @@ const Predictions = ({ apiUrl, selectedParkingId }) => {
         </section>
       );
     }
-
+    //Loading return 
     if (isLoading) {
         return (
           <section id="prediction" className="mt-12 text-center text-gray-400">
@@ -78,6 +79,7 @@ const Predictions = ({ apiUrl, selectedParkingId }) => {
         );
     }
 
+    //Empty Predictions return
     if (predictions.length === 0) {
         return (
           <section id="prediction" className="mt-12 text-center text-gray-400">
@@ -106,10 +108,10 @@ const Predictions = ({ apiUrl, selectedParkingId }) => {
         }
         ]
     };
-
+    //Chart configuration
     const chartOptions = {
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio: false, //this allow to resize correctly the chart
         plugins: {
         legend: {
             display: true,
@@ -138,7 +140,7 @@ const Predictions = ({ apiUrl, selectedParkingId }) => {
         }
         }
     };
-
+    // Chart Predictions Return
     return (
         <section id="prediction" className="mt-12 text-center text-gray-400">
         <h2 className="text-white text-center text-2xl font-bold my-4">

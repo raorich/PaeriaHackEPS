@@ -3,14 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import ParkingManager from '../components/ParkingManager.jsx'
 
 const apiUrl = import.meta.env.VITE_API_URL;
-console.log(apiUrl)
 ---
 
 <Layout title="ParkingManager">
   <main>
+    <!-- REACT COMPONENT -->
     <ParkingManager client:only="react" apiUrl={apiUrl} />
-    <!-- Client Process Data 
-    <ParkingAviability client:load apiUrl={apiUrl}/>
-    <Predictions client:load apiUrl={apiUrl}/>-->
   </main>
 </Layout>

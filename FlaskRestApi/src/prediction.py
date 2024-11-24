@@ -87,7 +87,6 @@ def predict_parking_occupation():
                 })
 
     tickets_df = main.pd.DataFrame(tickets)
-    print(tickets_df)
 
     # Align periods to full hours
     tickets_df["entry_time"] = tickets_df["entry_time"].dt.floor("h")
@@ -106,9 +105,6 @@ def predict_parking_occupation():
     # Count the number of tickets active per hour
     hourly_df = periods_df.groupby("timestamp").size().reset_index(name="tickets_active")
     november_hourly = hourly_df[hourly_df["timestamp"].dt.month == 11]
-    # Mostrar les dades filtrades
-    print("Dades de novembre (hourly_df):")
-    print(november_hourly.to_string(index=False))
 
     # Align timestamps to hour intervals
     hourly_df["timestamp"] = hourly_df["timestamp"].dt.floor("h")
@@ -178,15 +174,12 @@ def predict_parking_occupation():
                 (summary_df["hour"] < end_hour)
             ]
 
-            print(interval_rows)
-
             # Calculate mean or fallback to 0
             predicted_probability = (
                 interval_rows["predicted_occupation_probability"].mean()
                 if not interval_rows.empty
                 else 0
             )
-            print(predicted_probability)
 
             predictions.append({
                 "day": target_date.strftime("%Y-%m-%d"),
